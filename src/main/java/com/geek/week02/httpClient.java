@@ -1,6 +1,13 @@
 package com.geek.week02;
 
 
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+
 import java.io.IOException;
 
 /**
@@ -24,5 +31,20 @@ public class httpClient {
             }
         }
     }
+
+    /**
+     * 第二周作业
+     * 6.（必做）写一段代码，使用 HttpClient 或 OkHttp 访问 http://localhost:8801
+     */
+
+    public static void fangwen(){
+        try {
+            getAsString("http://localhost:8801");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 }
