@@ -1,0 +1,18 @@
+package com.geek.week05.mustDo08;
+
+import lombok.Data;
+
+import java.util.List;
+
+/**
+ * Created by xiangrui.xue on 2021/10/28.
+ */
+@Data
+public class Klass {
+
+    List<Student> students;
+
+    public void dong(){
+        System.out.println(this.getStudents());
+    }
+}
