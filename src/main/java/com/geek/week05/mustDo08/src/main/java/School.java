@@ -1,8 +1,3 @@
-package com.geek.week05.mustDo08;
-
-import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.annotation.Resource;
 
 /**

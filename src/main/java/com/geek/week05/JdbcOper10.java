@@ -21,14 +21,14 @@ public class JdbcOper10 {
     @Autowired
     HikariConfig hikariConfig;
 
-    public  void main(String[] args) throws ClassNotFoundException, SQLException {
-//      10.1 使用 JDBC 原生接口，实现数据库的增删改查操作
-        crudJDBC();
-//      10.2 使用事务，PrepareStatement 方式，批处理方式，改进上述操作
-        crudPreparedJDBC();
-//      10.3配置 Hikari 连接池
-        hikari();
-
+    public static   void main(String[] args) throws ClassNotFoundException, SQLException {
+////      10.1 使用 JDBC 原生接口，实现数据库的增删改查操作
+//        crudJDBC();
+////      10.2 使用事务，PrepareStatement 方式，批处理方式，改进上述操作
+//        crudPreparedJDBC();
+////      10.3配置 Hikari 连接池
+//        hikari();
+//
     }
 
     public static void crudJDBC() throws ClassNotFoundException,SQLException {
