@@ -16,9 +16,9 @@ import java.lang.reflect.Method;
 @Aspect
 public class DataSourceAspect {
 
-//   todo MethodSignature、ProceedingJoinPoint对象不了解，
-    @Around("dataSourcePointCut()")
+    @Around("dataSourcePointCut()")  //环绕通知  就是为了获取datasource的名字和关闭datasource
     public Object around(ProceedingJoinPoint point) throws Throwable {
+//        通过签名获得方法获得注解
         MethodSignature signature = (MethodSignature) point.getSignature();
         Method method = signature.getMethod();
         DataSource ds = method.getAnnotation(DataSource.class);
