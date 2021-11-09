@@ -32,6 +32,7 @@ create TABLE orders(
 id   VARCHAR(20)  COMMENT '订单id',
 userId  VARCHAR(20)   COMMENT  '购买用户ID',
 goodId  VARCHAR(20)   COMMENT  '商品id',
+goodSnapshoot VARCHAR(1000) not NULL  DEFAULT "" COMMENT '购买的商品当前快照',
 createDate DATE   COMMENT '购买日期',
 num  INT   COMMENT '购买数量',
 price INT  COMMENT '商品购买价格',

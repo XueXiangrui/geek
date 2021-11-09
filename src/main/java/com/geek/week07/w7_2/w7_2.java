@@ -1,4 +1,4 @@
-package com.geek.week07.src;
+package com.geek.week07.w7_2;
 
 import java.sql.*;
 
@@ -9,8 +9,8 @@ import java.sql.*;
 public class w7_2 {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-//       经测试，1w100次无索引无事务单线程的情况下，2条数据0.02s左右，10万数据1.734s，基于10万，id重复9.077s
-//        删除数据，9.945s
+//       经测试，无索引无事务单线程的情况下，2条数据0.02s左右，10万数据1.734s，1w100次9.077s
+//        1w100次测试第二次，9.945s
 //        10w执行10次，8.692s；batch放1w-10w，不要放100w
 //        todo 单线程，要试一下多线程；其他同学单线程十几秒，多线程5秒
 
